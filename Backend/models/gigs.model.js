@@ -2,32 +2,68 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const gigSchema= new Schema({
-    username :{
+    userId : {
         type : String,
         required : true,
-        unique : true,
     },
-    email :{
-        type : String,
+    title :{
+        type :String,
         required : true,
-        unique : true,
-    },
-password :{
-        type : String,
-        required : true,  
-    },
-    img :{
-        type : String,
-        required : false,  
     },
     desc :{
-        type : String,
-        required : false,  
+        type :String,
+        required : true,
     },
-    isSeller :{
-        type : Boolean,
-        default : false,  
+    totalStars :{
+        type : Number,
+        default : 0,
     },
+    startNumber :{
+        type :String,
+        default : 0,
+    },
+    cat :{
+        type :String,
+        required : true,
+    },
+    price : {
+        type:Number,
+        requied,
+    },
+    image :{
+        type : [String],
+        required : false,
+    },
+    cover :{
+        type:String,
+        required : true,
+    },
+    shortTitle :{
+        type:String,
+        required : true,
+    },
+    shortDesc :{
+        type:String,
+        required : true,
+    },
+    deliveryTime :{
+        type:Number,
+        required : true,
+    },
+    revisionNumber :{
+        type:Number,
+        required : true,
+    },
+    features :{
+        type:[String],
+        required : false,
+    },
+    sales :{
+        type:Number,
+        default : 0,
+    }
+    
+    
 
 },{
     timestamps : true

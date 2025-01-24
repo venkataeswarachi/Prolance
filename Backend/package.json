@@ -1,10 +1,10 @@
 {
-  "name": "FreeLancing_Backend",
+  "name": "api",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
   "license": "MIT",
-  "start": "start server.js",
+  "start": "nodemon server.js",
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
